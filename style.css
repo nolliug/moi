@@ -30,6 +30,14 @@ h2{
     color: black;
 }
 
+h3{
+    color: black;
+}
+
+h4{
+    color: black;
+}
+
 .logo{
     width: 60px;
     height: 60px;
@@ -42,9 +50,7 @@ h2{
 
 nav{
     display: flex;
-    flex-direction: row; 
     justify-content : flex-end; 
-    align-items: center;
 }
 
 ul{
@@ -53,5 +59,36 @@ ul{
 }
 
 li{
-    margin-left: 20px;
+   padding-left: 30px;
+}
+
+section{
+    display: flex;
+    width:  100%;
+}
+
+#articles {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    margin: 10px;
+}
+
+aside{
+    background-color: blueviolet;
+    border-radius: 20px;
+    width: 35%;
+    height: 400px;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+#logos-icones{
+    display:flex;
+    justify-content: space-around;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
 }
