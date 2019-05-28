@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Mandali&display=swap" rel="stylesheet"> 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Moi</title>
 </head>
 <body>
@@ -13,42 +17,47 @@
         <header>
             <h1>Jean Guillon</h1>
             <h2>Ma vie, mon oeuvre</h2>
-            <p>Je vous présente l'intégrale de ma vie, accompagnée de celle de mon hamster et de mon poisson rouge. J'ai aussi d'autres passions.</p>
-            <nav>
+            <p>Je vous présente l'intégrale de ma vie, accompagnée de celle de mon hamster et de mon poisson rouge. J'ai aussi d'autres passions. Ma saison préférée est l'automne.</p>
+            <hr>
+            <nav id="nav">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Photos</a></li>
+                    <li><a href="#hamster">Mon Hamster</a></li>
+                    <li><a href="#poisson">Mon Poisson Rouge</a></li>
+                    <li><a href="#mesphotos">Mes Photos</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="image">
-                <img class="banniere" src="./images/charcuterie1000.jpg" alt="Un vilain chat qui veut bouffer mon hamster.">
+                <img class="banniere" src="./images/charcuterie1000.jpg" alt="Miam, miam, maim, du bon paté de Hamster">
             </div>
         </header>
         <section>
             <div id="articles">
             <article>                
-                <h2><img class="logo" src="./images/logos/logo_hamster2.jpeg" alt="Mon hamster"> Mon hamster</h2>
-                <p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</p>
-                <p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</p>
+                <h2><img class="logo" src="./images/logos/logo_hamster2.jpeg" alt="Mon hamster" id="hamster"> Mon hamster</h2>
+                <p>Chaque espèce de hamster a des caractéristiques particulières. Elles présentent chacune des différences physiques, de taille, de comportement, d'habitat naturel, etc.</p>
+                <p>Les hamsters (Cricetinae) sont de petits rongeurs de la famille des Cricetidae qui forment la sous-famille des Cricetinae. Il en existe plusieurs espèces, réparties dans différents genres. Quelques espèces sont élevées en captivité comme animal de compagnie, pour l'expérimentation animale ou pour leur fourrure. Le premier fut le hamster doré qui existe à présent en de multiples variétés colorées et, plus récemment, des espèces naines comme le hamster de Roborovski, le hamster russe, le hamster de Campbell et le hamster de Chine.</p>
+                <a href="#nav" class="retour">retour haut de page</a>
             </article>
             <article>                
-                <h2><img class="logo" src="./images/logos/logo_poisson1.jpeg" alt="Mon poisson rouge"> Mon poisson rouge</h2>
-                <p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</p>
-                <p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</p>
+                <h2><img class="logo" src="./images/logos/logo_poisson1.jpeg" alt="Mon poisson rouge" id="poisson"> Mon poisson rouge</h2>
+                <p>Mon poisson rouge est résistant, son espérance de vie est de trente ans, à condition d'être dans un volume d'eau suffisamment important pour qu'il puisse évoluer à l'aise et en bancs. Le traditionnel bocal contenant un animal solitaire est de plus en plus dénoncé, voire interdit dans certains pays car il ne permet pas d'assurer le bien-être de ces poissons qui vivent en banc et peuvent atteindre une taille de plus de 45 cm à l'âge adulte.</p>
+                <a href="#nav" class="retour">retour haut de page</a>
             </article>
             </div>
             <aside>
-                <h4><img class="logo" src="./images/logos/logo_charcuterie.jpeg" alt="De la charcuterie, du paté et du pastis.">Passions</h4>
+                <h4><img class="logo" src="./images/logos/logo_charcuterie.jpeg" alt="De la charcuterie, du paté et du pastis."> Passions</h4>
                 <p>J'aime la paté, le pastis, la saucisse et les chips.</p>
                 <h4>Mais aussi</h4>
                 <p>J'aime aussi la pétanque, aller à la plage, manger du pop-corn et jeter des pétards au cinéma.</p>
                     <div id="logos-icones">
-                        <p><img src="./images/social/blogger.png" alt="Blogger"><img src="./images/social/tumblr.png" alt="Tumblr"><img src="./images/social/drupal.png" alt="Drupal"></p>
-                    </div>
+                        <p><a href="https://www.gtld.club"><img src="./images/social/blogger.png" alt="Le Club des nouveaux gTLDs"></a>
+                          <a href="https://www.tumblr.com"><img src="./images/social/tumblr.png" alt="Tumblr"></a>
+                          <a href="https://www.drupal.com"><img src="./images/social/drupal.png" alt="Drupal"></a></p>
+                      </div>
             </aside>
         </section>
-        <h2><img class="logo" src="./images/logos/logo_poisson2.jpeg" alt="Mon caroussel de photos"> Mes photos</h2>
+        <h2><img class="logo" src="./images/logos/logo_poisson2.jpeg" alt="Mon caroussel de photos" id="mesphotos"> Mes photos</h2>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -57,13 +66,13 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./images/1.jpg" class="d-block w-100" alt="Momo le Hamster rigolo">
+                    <img class="imgcar" src="./images/1.jpg" class="d-block w-100" alt="Momo le Hamster rigolo">
                   </div>
                   <div class="carousel-item">
-                    <img src="./images/6.jpg" class="d-block w-100" alt="Corona, mon Hamster qui ne boit que de la bière">
+                    <img class="imgcar" src="./images/6.jpg" class="d-block w-100" alt="Corona, mon Hamster qui ne boit que de la bière">
                   </div>
                   <div class="carousel-item">
-                    <img src="./images/8.jpeg" class="d-block w-100" alt="Porchia, mon hamster qui ressemble à un rat">
+                    <img class="imgcar" src="./images/7.jpg" class="d-block w-100" alt="Porchia, mon hamster qui ressemble à un rat">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -75,10 +84,20 @@
                   <span class="sr-only">Next</span>
                 </a>
         </div>
+        <div id="contact">
+        <h2><img class="logo" src="./images/logos/logo_hamster1.jpeg" alt="Prise de contact"> Prendre contact</h2>
+        <form method="POST" action="index.html">
+          <input type="text" name="Nom" placeholder="Nom" required><br/><br/>
+          <input type="email" name="Email" placeholder="Email" required><br/><br/>
+          <input type="tel" name="Téléphone" placeholder="Mobile"><br/><br/>
+          <textarea name="Mesage" rows="10" cols="65" placeholder="Message à Jean"></textarea><br/><br/>
+         <input type="submit" value="Envoyer"></br>
+         <a href="#nav" class="retour">retour haut de page</a>
+        </div>
+      </form>
+      <hr>
         <footer>
-            <div id="contact">
-                <p>Pour <strong>prendre contact</strong> avec Jean Guillon, c'est <a href="mailto:jean@guillon.com">ici</a> - Tous droits réservés</p>
-            </div>
+                <p>Pour <strong>envoyer un email</strong> à Jean, c'est <a href="mailto:jean@guillon.com">ici</a> - Tous droits <strike>réservés</strike></p>
         </footer> 
         <script src="pouet.js"></script>
     </main>

@@ -14,27 +14,12 @@ main{
     width: 50vw;
 }
 
-header{
-}
-
 p{
     color: black;
     text-align: justify;
 }
 
-h1{
-    color: black;
-}
-
-h2{
-    color: black;
-}
-
-h3{
-    color: black;
-}
-
-h4{
+h1, h2, h3, h4{
     color: black;
 }
 
@@ -79,13 +64,28 @@ aside{
     border-radius: 20px;
     width: 35%;
     height: 400px;
-    padding: 10px;
+    padding: 8px;
+    margin-top: 8px;
     border: solid 1px black;
 }
 
 #logos-icones{
     display:flex;
     justify-content: space-around;
+}
+
+.imgcar{
+    width: 800px;
+    height: 400px;
+}
+
+#contact{
+    margin-top: 20px;
+}
+
+.retour{
+    display: flex;
+    justify-content: flex-end;
 }
 
 footer{
